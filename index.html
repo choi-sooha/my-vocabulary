@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>MY VOCABULARY</title>
+  <link rel="stylesheet" href="stlye.css">
+  <script src="words.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>MY VOCABULARY</h1>
+      <p>나만의 영어 단어장</p>
+    </header>
+
+    <section class="progress">
+      <span id="counter">1 / 10</span>
+      <div class="progress-track">
+        <div id="progress-bar"></div>
+      </div>
+    </section>
+
+    <section class="word-card">
+      <p class="card-label">TODAY'S WORdividerD</p>
+
+      <h2 id="word">apple</h2>
+
+      <button id="sound-btn"
+              class="sound-btn"
+              type="button">
+        🔊 발음 듣기
+      </button>
+
+      <div class="divider"></div>
+
+      <p id="meaning">사과</p>
+
+      <button id="meaning-btn"
+              class="text-btn"
+              type="button">
+        뜻 가리기
+      </button>
+    </section>
+
+    <nav class="navigation">
+      <button id="prev-btn" type="button">
+        ← 이전
+      </button>
+      <button id="next-btn" type="button">
+        다음 →
+      </button>
+    </nav>
+
+    <button id="shuffle-btn"
+            class="shuffle-btn"
+            type="button">
+      ⇄ 단어 순서 섞기
+    </button>
+
+    <footer>
+      <p>STUDY EVERY DAY</p>
+    </footer>
+  </main>
+</body>
+</html>
